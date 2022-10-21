@@ -9,7 +9,7 @@ teclados e mais da marca SIGMAMEP, <br>
 voltados ao publico gamer</p>
 <br>
 <br>
-<h1>Baner:</h1>
+<h1>Banner:</h1>
 <img src="Baner.png">
 <br>
 <a href="https://www.notion.so/a6f9bf84f51a42118773c5c8828db075"> +Informações</a>
