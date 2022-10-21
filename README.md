@@ -12,4 +12,4 @@ voltados ao publico gamer</p>
 <h1>Baner:</h1>
 <img src="Baner.png">
 <br>
-<a href="google.com"> +Informações</a>
+<a href="https://www.notion.so/a6f9bf84f51a42118773c5c8828db075"> +Informações</a>
