@@ -11,3 +11,5 @@ voltados ao publico gamer</p>
 <br>
 <h1>Baner:</h1>
 <img src="Baner.png">
+<br>
+<a href="google.com"> +Informações</a>
