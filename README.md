@@ -10,4 +10,4 @@ voltados ao publico gamer</p>
 <br>
 <br>
 <h1>Baner:</h1>
-<img src="">
+<img src="Baner.png">
