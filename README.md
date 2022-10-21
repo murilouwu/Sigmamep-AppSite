@@ -8,6 +8,7 @@
 teclados e mais da marca SIGMAMEP, <br>
 voltados ao publico gamer</p>
 <br>
+https://www.canva.com/design/DAFPr9ujAGk/985tIVJtH2LkOxN31w8zUQ/edit?utm_content=DAFPr9ujAGk&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 <br>
 <h1>Banner:</h1>
 <img src="Baner.png">
