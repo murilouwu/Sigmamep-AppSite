@@ -4,7 +4,7 @@
 <br>
 <hr>
 <h2>Proposta</h2>
-<p>uma applicação para venda de camizetas, fones,<br>
+<p>uma applicação para venda de camizetas, fones, https://www.canva.com/brand/join?token=bzOtBNAHayb4cIRaoKvRcQ&referrer=team-invite<br>
 teclados e mais da marca SIGMAMEP, <br>
 voltados ao publico gamer</p>
 <br>
