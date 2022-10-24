@@ -4,7 +4,6 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/cssMain.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="shortcut icon" href="imgs/logo.png">
 	<title>Home</title>
 </head>
@@ -19,19 +18,18 @@
  				<button class="Nvlink">COSMÉTICOS</button>
  			</div>
  			<i class="fa-solid fa-magnifying-glass NvLupa"></i>
- 			<button class="topo-nvLogin">SIGN IN OR LOGIN</button>
+ 			<button class="topo-nvLogin" onclick="red('login.php')">SIGN IN OR LOGIN</button>
  		</div>
  		<div class="topo-body">
  			<div class="BdTextDiv">
  				<h1 class="BdTitle">Somos</h1>
 				<p class="BdText">
-
 					SIGMAMEP e Vedemos produtos de estética e qualidade, para apreciodores de jogos, que desejam um produto sigma (sigma > alfa), tanto para aprimorar seu Computador, Celular, Tablet Gamer, tanto aprimorar sua estética sigmaGamer.
 				</p>	
  			</div>
  			<div class="Bdbaner">
  				<div class="Bdbanertapa">
- 					<h1 class="tapaTitle"><span>SIGMAMEP</span>SIGMAMEP</h1>
+ 					<h1 class="tapaTitle">SIGMAMEP</h1>
  				</div>
 				<img src="imgs/moduraAdd.png" class="Ban-MolimgA">
 				<img src="imgs/Baner.png" class="Ban-MolimgB">
@@ -172,5 +170,6 @@
  		Footer
  	</div>
  	<script src="https://kit.fontawesome.com/39cab4bf95.js" crossorigin="anonymous"></script>
+ 	<script src="java/java.js"></script>
 </body>
 </html>

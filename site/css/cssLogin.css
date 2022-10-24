@@ -1,0 +1,123 @@
+@import "vars.css";
+
+body{
+	width: 100vw;
+	background-image: url(../imgs/fundo.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.page{
+	display: flex;
+	flex-direction: column;
+	width: 95vw;
+	height: 90vh;
+	backdrop-filter: blur(3px);
+	background-color: rgb(0 0 0 / 30%);
+	justify-content: center;
+	align-items: center;
+}
+	.login{
+		display: flex;
+		height: 60vh;
+		background-color: rgb(250 0 0 / 50%);
+		width: 70vw;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+		.logo{
+			display: flex;
+			width: 25vw;
+			position: absolute;
+			height: 25vw;
+			background-image: url('../imgs/logo.png');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-color: var(--colorAEx);
+			border-radius: 1000px;
+			margin-left: -43vw;
+		}
+		.form{
+			display: flex;
+			height: 28vh;
+			padding-top: 1vh;
+			padding-bottom: 1vh;
+			width: 36vw;
+			margin-left: 9vw;
+			flex-direction: column;
+			background-color: green;
+			justify-content: center;
+			align-items: center;
+		}
+			.input{
+				height: 5vh;
+				width: 25vw;
+				background-color: var(--transEx);
+				border-bottom: 4px solid var(--baseEx);
+				border-top: none;
+				border-left: none;
+				border-right: none;
+				color: var(--baseEx);
+				padding-left: 4vw;
+				font-size: 2vh;
+				text-align: center;
+				font-family: 'ComicBook';
+				font-weight: bold;
+			}
+				.input:hover{
+					cursor: pointer;
+				}
+				.input:focus{
+					border: 3px solid black;
+				}
+				.input::placeholder{
+					color: var(--text2Ex);
+				}
+				#email{
+					margin-top: -4vh;
+				}
+				#senha{
+					margin-top: 4vh;
+				}
+			.Enviar{
+				position: absolute;
+				height: 8vh;
+				border: none;
+				border-radius: 30px;
+				width: 17vw;
+				font-family: 'ComicBook';
+				text-align: center;
+				font-size: 5vh;
+				color: var(--baseEx);
+				background-color: var(--colorAEx);
+				margin-top: 29vh;
+				margin-left: -3vw;
+			}
+				.Enviar:hover{
+					cursor: pointer;
+					width: 18vw;
+				}
+		.link{
+			display: flex;
+			margin-bottom: -8vh;
+			margin-top: 6vh;
+			background-color: var(--transEx);
+			border: none;
+			text-decoration: underline;
+			color: var(--colorBEx);
+			font-size: 3vh;
+			font-family: 'ComicBook';
+			font-weight: bold;
+		}
+			.link:hover{
+				cursor: pointer;
+				background: rgb(0 0 0/ 20%);
+			}

@@ -123,14 +123,14 @@ body{
 				background-color: var(--text2Ex);
 				width: 40vw;
 				transform: rotate(19deg);
-				height: 30%;
+				height: 32vh;
 				margin-top: -79vh;
 				position: absolute;
 			}
 				.tapaTitle{
 					display: flex;
-					margin: 32% 0% 0% 32%;
-					font-size: 3em;
+					margin: 23vh 0vw 0vh 12vw;
+					font-size: 7vh;
 					transform: rotate(341deg);
 					color:
 					var(--baseEx);
@@ -143,23 +143,23 @@ body{
 			.Bdbanertapa2{
 				display: flex;
 				z-index: 2;
-				height: 9%;
+				height: 9vh;
 				position: absolute;
 				width: 33vw;
 				background: var(--text2Ex);
 				transform: rotate(2deg);
-				margin-top: 58vh;
+				margin-top: 59vh;
 			}
 			.Ban-MolimgA{
 				display: flex;
-				width: 95%;
+				width: 51vw;
 				z-index: 4;
 			}
 			.Ban-MolimgB{
 				display: flex;
 				z-index: 1;
-				width: 45%;
-				margin-top: -67%;
+				width: 27vw;
+				margin-top: -79vh;
 				margin-left: 2vw;
 			}
 
