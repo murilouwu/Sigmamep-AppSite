@@ -119,3 +119,27 @@ function red(page){
 	//mudar pagina
 	window.location = page;
 }
+//mudar class
+function altClass(bt, newClass, oldClass){
+	let clasA = "";
+	let clasB = "";
+	for (var i=0; i < oldClass.length; i++) {
+		bt.classList.remove(oldClass[i]);
+		if(i = 0){
+			clasA += "'"+oldClass[i]+"'";
+		}else{
+			clasA += ", '"+oldClass[i]+"'";
+		}
+	}
+	for (var i=0; i < newClass.length; i++) {
+		bt.classList.add(newClass[i]);
+		if(i = 0){
+			clasB += "'"+newClass[i]+"'";
+		}else{
+			clasB += ", '"+newClass[i]+"'";
+		}
+	}
+
+    let onclick = "altClass(this, ["+clasA+"], ["+clasB+"])";
+    bt.setAttribute('onclick', onclick);
+}
