@@ -119,27 +119,26 @@ function red(page){
 	//mudar pagina
 	window.location = page;
 }
-//mudar class
-function altClass(bt, newClass, oldClass){
-	let clasA = "";
-	let clasB = "";
-	for (var i=0; i < oldClass.length; i++) {
-		bt.classList.remove(oldClass[i]);
-		if(i = 0){
-			clasA += "'"+oldClass[i]+"'";
-		}else{
-			clasA += ", '"+oldClass[i]+"'";
-		}
-	}
-	for (var i=0; i < newClass.length; i++) {
-		bt.classList.add(newClass[i]);
-		if(i = 0){
-			clasB += "'"+newClass[i]+"'";
-		}else{
-			clasB += ", '"+newClass[i]+"'";
-		}
-	}
 
-    let onclick = "altClass(this, ["+clasA+"], ["+clasB+"])";
-    bt.setAttribute('onclick', onclick);
+function dropIcon(bt, id, oldClass, newClass, fun){
+	//variavel para deixar no onclick mudando o fun
+	var res = 0;
+	//pegar o que vai mostrar
+	let drop = document.querySelector(id);
+	//decide se oculta ou mostra
+	if(fun==0){
+		//mudar res
+		res=1;
+		//mostra
+		drop.style.display = 'flex';
+	}else{
+		//oculta
+		drop.style.display = 'none';
+	};
+	bt.className = newClass;
+	//var para onclick
+	let onclick = "dropIcon(this,'"+id+"', '"+newClass+"', '"+oldClass+"',"+res+")";
+
+	//definir onclick
+	bt.setAttribute('onclick', onclick);
 }

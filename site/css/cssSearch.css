@@ -143,7 +143,7 @@ body{
 					font-size: 4vh;
 				}
 		.barB{
-			display: flex;
+			display: none;
 			border-radius: 10px;
 			margin-top: 3vh;
 			width: 60%;
@@ -184,6 +184,10 @@ body{
 			height: 13vh;
 			justify-content: space-around;
 		}
+			.checkbtn{
+				position: absolute;
+				opacity: 0;
+			}
 			.btnCheck{
 				display: flex;
 				clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -195,9 +199,83 @@ body{
 				color: var(--colorBEx);
 				border: none;
 			}
-				.btnCheck:hover{
-					width: 10vw;
+.pages{
+	display: flex;
+	width: 100vw;
+	height: auto;
+	margin-top: 18vh;
+	flex-direction: column;
+	background-color: var(--text2Ex);
+	align-items: center;color: var(--colorBEx);
+	font-family: 'ComicBook';
+	padding-bottom: 4vh;
+}
+	.pag{
+		display: flex;
+		background-color: var(--baseEx);
+		width: 7vw;height: 9vh;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		border-radius: 15px;
+		font-size: 1em;color: var(--text2Ex);
+		position: absolute;
+		margin: -4vh 0vw 0vh 89vw;
+	}
+		.iconPage{
+			font-size: 3vh;
+		}
+	.page{	
+		display: flex;
+		width: 95%;
+		font-family: 'ComicBook';
+		flex-flow: wrap;
+		justify-content: center;
+	}
+		.PgCard{
+			display: flex;
+			width: 19vw;
+			height: 19vw;
+			border-radius: 20px;
+			background: black;
+			margin-top: 2vh;
+			justify-content: center;
+			align-items: center;
+			margin-left: 4vw;
+			flex-flow: column;
+		}
+			.PgCard:hover{
+				cursor: pointer;
+				width: 20vw;
+				height: 20vw;
+				margin-left: 4vw;
+				flex-flow: column;
+			}
+			.PgCd-Img{
+				display: flex;
+				width: 90%;
+				height: 70%;
+				background-color: var(--colorAEx);
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin-bottom: 2vh;
+				border-radius: 15px;
+			}
+			.PgCd-Data{
+				width: 86%;
+				text-align: center;
+				display: flex;
+				justify-content: space-between;
+				color: var(--text2Ex);
+			}
+				.PgCdDt-Name{
+					width: 47%;
+					text-align: center;
 				}
-				.btnAtv{
-					background-color: var(--text2Ex);
+				.PgCdDt-Price{
+					display: flex;
+					width: 48%;
+					border-left: 2px solid;
+					padding-left: 5%;
 				}
