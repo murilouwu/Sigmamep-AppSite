@@ -3,43 +3,71 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="css/cssSearch.css">
+		<link rel="stylesheet" type="text/css" href="css/cssADM.css">
 		<link rel="shortcut icon" href="imgs/logo.png">
-		<title>Sigmamep</title>
+		<title>ADM-Painel</title>
 	</head>
 	<body>
 		<div class="topo">
-	 		<div class="topo-nav">
-	 			<div class="topo-nvlogo"></div>
-	 			<div class="topo-nvlinks">
-	 				<button class="Nvlink" onclick="red('index.php')">HOME</button>
-	 				<button class="Nvlink" onclick="red('login.php')">PERFIL</button>
-	 			</div>
-	 			<button class="topo-nvLogin" onclick="red('login.php')">SIGN IN OR LOGIN</button>
-	 		</div>
+	 		<button class="Nvlink" onclick="red('index.php')">HOME</button>
 	 	</div>
 	 	<form class="pesquisa" method="post">
 	 		<div class="bars">
 	 			<div class="barA">
 	 				<i class="fa-solid fa-magnifying-glass ISearch"></i>
-	 				<input class="barInputA" type="text" name="nome" placeholder="Pesquise por nome o produto">
-	 				<i class="fa-solid fa-bars IMenu" onclick="dropIcon(this, '#moneySearchBar', 'fa-solid fa-bars IMenu', 'fa-sharp fa-solid fa-circle-xmark IMenu', 0)"></i>
-	 			</div>
-	 			<div class="barB" id="moneySearchBar">
-	 				<i class="fa-solid fa-dollar-sign ISearchB"></i>
-	 				<input class="barInputB" type="number" name="min" placeholder="minimo de preço" min="0" step="0.010">
-	 				<input class="barInputB" type="number" name="max" placeholder="maximo de preço" max="999999,99" step="0.010">
+	 				<input class="barInputA" type="text" name="nome" placeholder="Pesquise por nome o item">
 	 			</div>
 	 		</div>
 	 		<div class="checks">
 	 			<div class="botons">
 	 				<i class="fa-solid fa-computer btnCheck" id="btncheck0" onclick="backColorcheck('btncheck0', 'var(--text2Ex)', 'var(--baseEx)')"></i>
 	 				<i class="fa-solid fa-shirt btnCheck" id="btncheck1" onclick="backColorcheck('btncheck1', 'var(--text2Ex)', 'var(--baseEx)')"></i>
+	 				<i class="fa-solid fa-users btnCheck" id="btncheck2" onclick="backColorcheck('btncheck2', 'var(--text2Ex)', 'var(--baseEx)')"></i>
 	 			</div>
 	 			<input class="ocultar" type="checkbox" name="produto">
 	 			<input class="ocultar" type="checkbox" name="cosmesticos">
+	 			<input class="ocultar" type="checkbox" name="users">
 	 		</div>
 	 	</form>
+	 	<div class="centro">
+		 	<h1 class="CenterText">Funções</h1>
+	 		<div class="Crt-Scroll">
+	 			<div class="Crt-Scrollitens">
+		 			<div class="itCard">
+		 				<i class="icon fa-solid fa-cart-plus"></i>
+		 				<label class="itCd-name">Adicionar item</label>
+		 			</div>
+		 			<div class="itCard">
+		 				<i class="icon fa-solid fa-square-plus"></i>
+		 				<label class="itCd-name">Adicionar Categoria De Produto</label>
+		 			</div>
+		 			<div class="itCard">
+		 				<i class="icon fa-solid fa-delete-left"></i>
+		 				<label class="itCd-name">Deletar Categoria De Produto</label>
+		 			</div>
+		 			<div class="itCard">
+		 				<i class="icon fa-solid fa-crown"></i>
+		 				<label class="itCd-name">Tornar user ADM</label>
+		 			</div>
+		 			<div class="itCard">
+		 				<i class="icon fa-solid fa-money-bill-trend-up"></i>
+		 				<label class="itCd-name">Mudar o preço de todos os produtos por %</label>
+		 			</div>
+		 			<div class="itCard">
+		 				<i class="icon fa-solid fa-trash"></i>
+		 				<label class="itCd-name">Deletar Produtos sem estoque</label>
+		 			</div>
+		 			<div class="itCard">
+		 				<i class="icon fa-solid fa-skull"></i>
+		 				<label class="itCd-name">Banir Users como status Bad</label>
+		 			</div>
+		 			<div class="itCard">
+		 				<i class="icon fa-solid fa-user-xmark"></i>
+		 				<label class="itCd-name">Banir ADM</label>
+		 			</div>
+		 		</div>
+	 		</div>
+ 		</div>
 		<div class="pages">
 			<div class="pag">
 				<i class="iconPage fa-sharp fa-solid fa-layer-group"></i>
@@ -48,59 +76,33 @@
 			<div class="page">
 				<div class="PgCard">
 					<div class="PgCd-Img"></div>
-					<div class="PgCd-Data">
-						<label class="PgCdDt-Name">name</label>
-						<label class="PgCdDt-Price">000000,00</label>
-					</div>
 				</div>
 				<div class="PgCard">
 					<div class="PgCd-Img"></div>
-					<div class="PgCd-Data">
-						<label class="PgCdDt-Name">name</label>
-						<label class="PgCdDt-Price">000000,00</label>
-					</div>
 				</div>
 				<div class="PgCard">
 					<div class="PgCd-Img"></div>
-					<div class="PgCd-Data">
-						<label class="PgCdDt-Name">name</label>
-						<label class="PgCdDt-Price">000000,00</label>
-					</div>
 				</div>
 				<div class="PgCard">
 					<div class="PgCd-Img"></div>
-					<div class="PgCd-Data">
-						<label class="PgCdDt-Name">name</label>
-						<label class="PgCdDt-Price">000000,00</label>
-					</div>
 				</div>
 				<div class="PgCard">
 					<div class="PgCd-Img"></div>
-					<div class="PgCd-Data">
-						<label class="PgCdDt-Name">name</label>
-						<label class="PgCdDt-Price">000000,00</label>
-					</div>
 				</div>
 				<div class="PgCard">
 					<div class="PgCd-Img"></div>
-					<div class="PgCd-Data">
-						<label class="PgCdDt-Name">name</label>
-						<label class="PgCdDt-Price">000000,00</label>
-					</div>
 				</div>
 				<div class="PgCard">
 					<div class="PgCd-Img"></div>
-					<div class="PgCd-Data">
-						<label class="PgCdDt-Name">name</label>
-						<label class="PgCdDt-Price">000000,00</label>
-					</div>
 				</div>
 				<div class="PgCard">
 					<div class="PgCd-Img"></div>
-					<div class="PgCd-Data">
-						<label class="PgCdDt-Name">name</label>
-						<label class="PgCdDt-Price">000000,00</label>
-					</div>
+				</div>
+				<div class="PgCard">
+					<div class="PgCd-Img"></div>
+				</div>
+				<div class="PgCard">
+					<div class="PgCd-Img"></div>
 				</div>
 			</div>
 			<div class="pags">

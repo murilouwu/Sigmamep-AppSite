@@ -10,14 +10,14 @@
 <body>
  	<div class="topo">
  		<div class="topo-nav">
- 			<div class="topo-nvlogo"></div>
+ 			<div class="topo-nvlogo" onclick="red('adm.php')"></div>
  			<div class="topo-nvlinks">
- 				<button class="Nvlink">PEDIDOS</button>
- 				<button class="Nvlink">PERFIL</button>
- 				<button class="Nvlink">PRODUTOS</button>
- 				<button class="Nvlink">COSMÉTICOS</button>
+ 				<button class="Nvlink" onclick="red('perfil.php')">PEDIDOS</button>
+ 				<button class="Nvlink" onclick="red('perfil.php')">PERFIL</button>
+ 				<button class="Nvlink" onclick="red('search.php')">PRODUTOS</button>
+ 				<button class="Nvlink" onclick="red('search.php')">COSMÉTICOS</button>
  			</div>
- 			<i class="fa-solid fa-magnifying-glass NvLupa"></i>
+ 			<i class="fa-solid fa-magnifying-glass NvLupa" onclick="red('search.php')"></i>
  			<button class="topo-nvLogin" onclick="red('login.php')">SIGN IN OR LOGIN</button>
  		</div>
  		<div class="topo-body">
@@ -82,7 +82,7 @@
  		<div class="Crt-Result">
  			<h1 class="Ctr-Name">Name category escolhida</h1>
  			<div class="Crt-PageCategory">
-				<div class="PgCard">
+				<div class="PgCard" onclick="red('produto.php')">
 					<div class="PgCd-Img"></div>
 					<div class="PgCd-Data">
 						<label class="PgCdDt-Name">name</label>

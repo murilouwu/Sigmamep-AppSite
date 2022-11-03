@@ -1,0 +1,77 @@
+@import "vars.css";
+
+body{
+	background: var(--colorAEx);
+}
+.topo-nav{
+	display: flex;
+	height: 5vh;
+	width: 100vw;
+	justify-content: space-around;
+	background-color: var(--text2Ex);
+	align-items: center;
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+	z-index: 10;
+}
+	.topo-nvlogo{
+		display: flex;
+		width: 2vw;
+		height: 2vw;
+		border-radius: 25px;
+		margin-left: -6vw;
+		background-image: url('../imgs/logo.png');
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+	.topo-nvlinks{
+		width: 46%;
+		display: flex;
+		justify-content: space-around;
+		height: 100%;
+		align-items: center;
+		color: var(--baseEx);
+		margin-left: -14vw;
+	}
+		.Nvlink{
+			font-family: 'ComicBook';
+			width: 25%;
+			font-size: 1em;
+			text-align: center;
+			color: var(--colorBEx);
+			background-color: var(--transEx);
+			border: none;
+			transition: 0.025s;
+		}
+			.Nvlink:hover{
+				height: 150%;
+				background-color: rgba(0 0 0/ 20%);
+				backdrop-filter: blur(5px);
+				border-radius: 0px 0px 10px 10px;
+				cursor: pointer;
+			}
+	.NvLupa{
+		cursor: pointer;
+		font-size: 1.5em;
+		color: var(--colorBEx);
+		margin-left: -12vw;
+	}
+		.NvLupa:hover{
+			font-size: 2em;
+		}
+	.topo-nvLogin{
+		width: 19%;
+		height: 100%;
+		border: none;
+		text-align: center;
+		border-radius: 20px;
+		color: var(--baseEx);
+		font-family: 'ComicBook';
+		font-size: 1em;
+		background: var(--colorAEx);
+	}
+		.topo-nvLogin:hover{
+			width: 25%;
+			cursor: pointer;
+		}

@@ -142,3 +142,12 @@ function dropIcon(bt, id, oldClass, newClass, fun){
 	//definir onclick
 	bt.setAttribute('onclick', onclick);
 }
+
+function backColorcheck(id, colorA, colorB){
+	let bt = document.getElementById(id);
+	bt.style.backgroundColor = colorA;
+	
+	let onclick = "backColorcheck('"+id+"', '"+colorB+"', '"+colorA+"')";
+	//definir onclick
+	bt.setAttribute('onclick', onclick);
+}

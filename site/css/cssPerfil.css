@@ -1,0 +1,93 @@
+@import "vars.css";
+
+body{
+	background: var(--colorAEx);
+}
+
+.topo{
+	display: flex;
+}
+	.backButton{
+		display: flex;
+	}
+		.backButton:hover{
+			cursor: pointer;
+		}
+.perfil{
+	display: flex;
+}
+	.mostruarioPerfil{
+		display: flex;
+	}
+		.formMos{
+			display: flex;
+		}
+		.imgPerfil{
+			display: flex;
+		}
+			.imgPerfil:hover{
+				cursor: pointer;
+			}
+		.divForm{
+			display: flex;
+		}
+			.textMosPerfil{
+				display: flex;
+			}
+				.textMosPerfil:hover{
+					cursor: pointer;
+				}
+			.LongTextMosPerfil{
+				display: flex;
+			}
+				.LongTextMosPerfil:hover{
+					cursor: pointer;
+				}
+		.btnUp{
+			display: flex;
+		}
+			.btnUp:hover{
+				cursor: pointer;
+			}
+.pedidos{
+	display: flex;
+}
+	.pedidos:hover{
+		cursor: default;
+	}
+	.titlePedidos{
+		display: flex;
+	}
+	.tablePedidos{
+		display: flex;
+	}
+		.tablePedidos .top{
+			display: flex;
+		}
+			.tablePedidos .top .th1, .tablePedidos .top .th2, .tablePedidos .top .th3, .tablePedidos .top .th4, .tablePedidos .top .th5{
+				display: flex;
+			}
+			.tablePedidos .th1, .tablePedidos .th2, .tablePedidos .th3, .tablePedidos .th4, .tablePedidos .th5{
+				display: flex;
+			}
+			.tablePedidos .th1{
+				display: flex;
+			}
+			.tablePedidos .th2{
+				display: flex;
+			}
+			.tablePedidos .th3{
+				display: flex;
+			}
+			.tablePedidos .th4{
+				display: flex;
+			}
+			.tablePedidos .th5{
+				display: flex;
+			}
+		.tablePedidos .body{
+			display: flex;
+		}
+			.tablePedidos .status:hover{
+				display: flex;
+			}
