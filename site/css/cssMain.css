@@ -1,24 +1,27 @@
 @import "vars.css";
 
 body{
-	background: var(--colorAEx);
+	background: var(--Black);
 }
 
 .topo{
 	width: 100vw;
 	display: flex;
-	background-color: var(--text2Ex);
 	height: 75vh;
 	flex-direction: column;
+	opacity: 1;
+	background: radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#a38c7c 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #a38c7c 1.6px, #513f30 1.6px) -0.8px 0;
+	background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 }
 	.topo-nav{
 		display: flex;
 		height: 5%;
 		justify-content: space-around;
-		background-color: var(--text2Ex);
 		align-items: center;
 		padding-top: 1vh;
 		z-index: 10;
+		background-color: var(--Black20);
+		backdrop-filter: blur(1px);
 	}
 		.topo-nvlogo{
 			display: flex;
@@ -37,7 +40,6 @@ body{
 			justify-content: space-around;
 			height: 100%;
 			align-items: center;
-			color: var(--baseEx);
 			margin-left: -14vw;
 		}
 			.Nvlink{
@@ -45,7 +47,7 @@ body{
 				width: 25%;
 				font-size: 1em;
 				text-align: center;
-				color: var(--colorBEx);
+				color: var(--WhiteGreen);
 				background-color: var(--transEx);
 				border: none;
 				transition: 0.025s;
@@ -60,7 +62,7 @@ body{
 		.NvLupa{
 			cursor: pointer;
 			font-size: 1.5em;
-			color: var(--colorBEx);
+			color: var(--WhiteGreen);
 			margin-left: -12vw;
 		}
 			.NvLupa:hover{
@@ -72,10 +74,10 @@ body{
 			border: none;
 			text-align: center;
 			border-radius: 20px;
-			color: var(--baseEx);
+			color: var(--WhiteGreen);
 			font-family: 'ComicBook';
 			font-size: 1em;
-			background: var(--colorAEx);
+			background: var(--WhiteGreen);
 		}
 			.topo-nvLogin:hover{
 				width: 25%;
@@ -83,7 +85,6 @@ body{
 			}
 	.topo-body{
 		display: flex;
-		background-color: var(--text2Ex);
 		height: 95%;
 		flex-direction: row;
 		align-items: center;
@@ -120,12 +121,14 @@ body{
 			.Bdbanertapa{
 				font-family: 'ComicBook';
 				z-index: 3;
-				background-color: var(--text2Ex);
 				width: 40vw;
 				transform: rotate(19deg);
 				height: 32vh;
 				margin-top: -79vh;
 				position: absolute;
+				opacity: 1;
+				background: radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#a38c7c 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #a38c7c 1.6px, #513f30 1.6px) -0.8px 0;
+				background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 			}
 				.tapaTitle{
 					display: flex;
@@ -146,9 +149,11 @@ body{
 				height: 9vh;
 				position: absolute;
 				width: 33vw;
-				background: var(--text2Ex);
 				transform: rotate(2deg);
 				margin-top: 59vh;
+				opacity: 1;
+				background: radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#a38c7c 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #a38c7c 1.6px, #513f30 1.6px) -0.8px 0;
+				background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 			}
 			.Ban-MolimgA{
 				display: flex;
