@@ -1,93 +1,438 @@
 @import "vars.css";
 
+@keyframes modal{
+	0%{
+		margin-top: -170vh;
+	}
+	100%{
+		margin-top: 0vh;
+	}
+}
 body{
 	background: var(--colorAEx);
 }
-
 .topo{
+	width: 100vw;
 	display: flex;
+	height: 7vh;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 	.backButton{
-		display: flex;
+		width: 10vw;
+		height: 80%;
+		border-radius: 15px;
+		border: none;
+		text-align: center;
+		font-family: 'ComicBook';
+		color: var(--colorBEx);
+		font-size: 3vh;
+		background-color: var(--baseEx);
 	}
 		.backButton:hover{
+			width: 15vw;
+			box-shadow: 0px 0px 10px 3px var(--baseEx);
 			cursor: pointer;
 		}
 .perfil{
 	display: flex;
+	margin-top: 10vh;
+	width: 100vw;
+	height: 40vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: end;
 }
-	.mostruarioPerfil{
-		display: flex;
-	}
 		.formMos{
 			display: flex;
+			background-color: blueviolet;
+			height: 12vw;
+			width: 85vw;
+			align-items: center;
 		}
 		.imgPerfil{
 			display: flex;
+			background: green;
+			width: 15vw;
+			height: 15vw;
+			border-radius: 10vw;
+			margin-right: 2vw;
+			margin-left: -8vw;
 		}
 			.imgPerfil:hover{
 				cursor: pointer;
 			}
 		.divForm{
 			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-around;
+			height: 85%;
+			width: 27%;
+			margin-right: 2%;
+			font-size: 2vh;
+			font-family: 'ComicBook';
 		}
 			.textMosPerfil{
-				display: flex;
+				width: 80%;
+				text-align: center;
+				border-bottom: 2px solid var(--text2Ex);
+				color: var(--colorBEx);
+				padding-bottom: 1vh;
 			}
+				.senhaIcon{
+					color: var(--text2Ex);
+					font-size: 3vh;
+					position: absolute;
+					margin: -8vh 22vw 0vh 0vw;
+				}
+					.senhaIcon:hover{
+						cursor: pointer;
+					}
 				.textMosPerfil:hover{
 					cursor: pointer;
 				}
 			.LongTextMosPerfil{
-				display: flex;
+				background-color: darkgray;
+				width: 100%;
+				text-align: center;
+				height: 80%;
+				border-radius: 10px;
+				word-break: break-word;
+				overflow-y: overlay;
 			}
 				.LongTextMosPerfil:hover{
 					cursor: pointer;
 				}
 		.btnUp{
-			display: flex;
+			position: absolute;
+			width: 15vw;
+			height: 4vh;
+			border: none;
+			text-align: center;
+			border-radius: 20px;
+			color: var(--baseEx);
+			font-family: 'ComicBook';
+			font-size: 2vh;
+			background: var(--text2Ex);
+			margin: 4vh 0vw 0vh -8vw;
 		}
 			.btnUp:hover{
 				cursor: pointer;
+				width: 18vw;
+				box-shadow: 0px 0px 10px var(--text2Ex);
 			}
 .pedidos{
 	display: flex;
+	margin-top: 5vh;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90vw;
 }
 	.pedidos:hover{
 		cursor: default;
 	}
 	.titlePedidos{
-		display: flex;
+		width: 100%;
+		background: saddlebrown;
+		text-align: center;
+		font-size: 4vh;
+		font-weight: 900;
+		font-family: 'ComicBook';
+		padding: 2vh 0vw 2vh 0vw;
+		border-radius: 20px 20px 0px 0px;
+		color: var(--colorBEx);
 	}
 	.tablePedidos{
-		display: flex;
+		width: 100%;
+		border-spacing: 0;
+		font-family: 'ComicBook';
 	}
 		.tablePedidos .top{
 			display: flex;
+			width: 100%;
+			background-color: var(--text2Ex);
+			font-size: 2.5vh;
+			color: var(--colorBEx);
 		}
 			.tablePedidos .top .th1, .tablePedidos .top .th2, .tablePedidos .top .th3, .tablePedidos .top .th4, .tablePedidos .top .th5{
-				display: flex;
+				border-left: 2px solid var(--colorBEx);
+				border-bottom: 4px solid;
+				padding: 2vh 0vw 2vh 0vw;
 			}
 			.tablePedidos .th1, .tablePedidos .th2, .tablePedidos .th3, .tablePedidos .th4, .tablePedidos .th5{
-				display: flex;
+				border-right: 2px solid;
+				border-bottom: 2px solid;
+				padding: 0.5vh 0vw 0.5vh 0vw;
 			}
 			.tablePedidos .th1{
-				display: flex;
+				width: 10%;
 			}
 			.tablePedidos .th2{
-				display: flex;
+				width: 20%;
 			}
 			.tablePedidos .th3{
-				display: flex;
+				width: 20%;
 			}
 			.tablePedidos .th4{
-				display: flex;
+				width: 30%;
 			}
 			.tablePedidos .th5{
-				display: flex;
+				width: 20%;
+				border-right: none;
 			}
 		.tablePedidos .body{
 			display: flex;
+			background-color: brown;
+			color: var(--text2Ex);
+			font-size: 2vh;
+			text-align: center;
 		}
 			.tablePedidos .status:hover{
+				background: hotpink;
+			}
+
+/*modals*/
+.modals{
+	position: absolute;
+	width: 100vw;
+	height: 150%;
+	background: rgba(0 0 0/ 70%);
+	backdrop-filter: blur(10px);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+	.PerfilUpdate{
+		background-color: var(--text2Ex);
+		height: 70vh;
+		flex-direction: column;
+		width: 40vw;
+		padding: 2vh;
+		border-radius: 10px;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 0px 5vw 5px rgba(255 255 255 / 20%);
+		animation: 0.5s linear modal;
+	}
+		.X{
+			position: absolute;
+			color: var(--text2Ex);
+			margin: 0vh 54vw 66vh 0vw;
+			font-size: 4vh;
+		}
+			.X:hover{
+				cursor: pointer;
+				font-size: 6vh;
+			}
+		.fotoPerfilInput{
+			height: 20%;
+			padding-top: 1vh;
+			margin-bottom: 5%;
+			width: 17vw;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			border: 1px solid var(--colorBEx);
+			color: var(--colorBEx);
+			font-size: 2vh;
+			border-radius: 8px;
+			font-family: 'ComicBook';
+		}
+			.imgMostragem{
+				width: 5vw;
+				height: 5vw;
+				border-radius: 50px;
+				background: bisque;
+			}
+			.fotoPerfilInput label{
+				margin-top: 1vh;
+				width: 100%;
+				text-align: center;
+				padding: 1vh 0vw 1vh 0vw;
+				border-radius: 0px 0px 5px 5px;
+			}
+				.fotoPerfilInput label:hover{
+					cursor: pointer;
+					background-color: var(--baseEx);
+				}
+		.IntputsTexts{
+			height: 50%;
+			margin-bottom: 5%;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+			align-items: center;
+			border: 1px solid var(--colorBEx);
+			border-radius: 5px;
+			width: 38vw;
+		}
+			.InputTextIc{
+				width: 90%;
+				height: 5vh;
 				display: flex;
+				flex-direction: row;
+				align-items: center;
+				color: var(--colorBEx);
+				justify-content: center;
+			}
+				.InputText{
+					margin-left: 1vw;
+					width: 100%;
+					border-bottom: 1px solid var(--colorBEx);
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					color: var(--colorBEx);
+					padding-bottom: 1vh;
+					text-align: center;
+					font-family: 'ComicBook';
+					border-radius: 7px;
+				}
+					.iconInput{
+						margin-left: 1vw;
+					}
+					.InputText:hover{
+						cursor: pointer;
+					}
+					.InputText:focus{
+						background-color: rosybrown;
+						border-width: 3px;
+						border-color: blueviolet;
+					}
+					.InputText::placeholder{
+						color: gray;
+					}
+				.InputTextTextarea{
+					margin-left: 1vw;
+					width: 70%;
+					border-bottom: 1px solid var(--colorBEx);
+					border-top: none;
+					border-left: none;
+					border-right: none;
+					color: var(--colorBEx);
+					padding-bottom: 1vh;
+					text-align: center;
+					height: 7vh;
+					resize: none;
+					word-break: break-word;
+					overflow-y: overlay;
+					font-family: 'ComicBook';
+					border-radius: 7px;
+				}
+					.InputTextTextarea:hover{
+						cursor: pointer;
+					}
+					.InputTextTextarea:focus{
+						background-color: rosybrown;
+						border-width: 3px;
+						border-color: blueviolet;
+					}
+					.InputTextTextarea::placeholder{
+						color: gray;
+					}
+		.submitInputUpdateUser{
+			height: 10%;
+			width: 50%;
+			border-radius: 30px;
+			background-color: var(--colorAEx);
+			border: none;
+			font-size: 3vh;
+			font-weight: bolder;
+			font-family: 'ComicBook';
+			color: var(--text2Ex);
+		}
+			.submitInputUpdateUser:hover{
+				cursor: pointer;
+				width: 60%;
+			}
+
+	.comentProductBox{
+		background-color: var(--text2Ex);
+		height: 49vh;
+		flex-direction: column;
+		width: 40vw;
+		padding: 2vh;
+		border-radius: 10px;
+		justify-content: center;
+		align-items: center;
+		box-shadow: 0px 0px 5vw 5px rgba(255 255 255 / 20%);
+		animation: 0.5s linear modal;
+	}
+		.X2{
+			position: absolute;
+			color: var(--text2Ex);
+			margin: 0vh 54vw 66vh 0vw;
+			font-size: 4vh;
+		}
+			.X2:hover{
+				cursor: pointer;
+				font-size: 6vh;
+			}
+		.avalCaoProd{
+			height: 30%;
+			margin-bottom: 5%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			border: 1px solid var(--colorBEx);
+			border-radius: 5px;
+			width: 38vw;
+			font-size: 4vh;
+			background-color: gray;
+		}
+			.starIcon{
+				color: var(--text2Ex);
+				background: var(--transEx);
+				padding: 1vw;
+				border-radius: 50px;
+			}
+				.starIcon:hover{
+					cursor: pointer;
+					font-size: 5vh;
+				}
+		.ComentProductInput{
+			margin-left: 1vw;
+			width: 70%;
+			border: 1px solid var(--colorBEx);
+			color: var(--colorBEx);
+			padding-bottom: 1vh;
+			text-align: center;
+			height: 21vh;
+			resize: none;
+			word-break: break-word;
+			overflow-y: overlay;
+			font-family: 'ComicBook';
+			border-radius: 7px;
+			margin-bottom: 2vh;
+		}
+			.ComentProductInput:hover{
+				cursor: pointer;
+			}
+			.ComentProductInput:focus{
+				background-color: rosybrown;
+				border-width: 3px;
+				border-color: blueviolet;
+			}
+			.ComentProductInput::placeholder{
+				color: gray;
+			}
+		.ComentEnv{
+			height: 10%;
+			width: 50%;
+			border-radius: 30px;
+			background-color: var(--colorAEx);
+			border: none;
+			font-size: 3vh;
+			font-weight: bolder;
+			font-family: 'ComicBook';
+			color: var(--text2Ex);
+		}
+			.ComentEnv:hover{
+				cursor: pointer;
+				width: 60%;
 			}

@@ -34,7 +34,9 @@
 					<div class="pdtSelInfos">
 						<div class="price">
 							<label class="priceText"><h5>R$</h5>100.000,00</label>
-							<h3 class="nota"></h3>
+							<div class="nota">
+								<!--icons-->
+							</div>
 						</div>
 						<div class="adverbe">
 							<!--icons-->
@@ -56,15 +58,19 @@
 			<div class="desFormProduct">
 			</div>
 			<div class="comentProduct">
-				<div class="comentCard">
-					<h1 class="nickCard">name</h1>
-					<div class="comentCardInfo">
-						<div class="imgPerfilComent"></div>
-						<div class="PerfilComent">
-							<label class="notaComent">
+				<div class="comentProductScroll">
+					<div class="comentCard">
+						<div class="TopComentCard">
+							<h1 class="nickCard">name</h1>
+							<div class="notaComent">
 								<!--icons star-->
-							</label>
-							<h4 class="PerfilComentCom">...</h4>
+							</div>
+						</div>
+						<div class="ToBodyComentCard">
+							<div class="imgPerfilComent"></div>
+							<div class="comentCardInfo">
+								<p class="PerfilComentCom">...</p>
+							</div>
 						</div>
 					</div>
 				</div>
