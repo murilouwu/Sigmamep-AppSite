@@ -59,7 +59,7 @@
 		 			</div>
 		 			<div class="itCard">
 		 				<i class="icon fa-solid fa-skull"></i>
-		 				<label class="itCd-name">Banir Users como status Bad</label>
+		 				<label class="itCd-name">Banir Users com o status Bad</label>
 		 			</div>
 		 			<div class="itCard">
 		 				<i class="icon fa-solid fa-user-xmark"></i>

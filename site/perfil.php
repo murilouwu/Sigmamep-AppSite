@@ -86,11 +86,11 @@
 		<form class="comentProductBox ocultar" method="post" enctype="multipart/form-data" id="formComent">
 			<i class="fa-solid fa-circle-xmark X2" onclick="mostrar(['#modals', '#formComent'], 2)"></i>
 			<div class="avalCaoProd">
-				<i class="fa-solid fa-star starIcon" id="starA" onclick="backColorcheck('starA', 'red', 'var(--transEx)')"></i>
-				<i class="fa-solid fa-star starIcon" id="starB" onclick="backColorcheck('starB', 'red', 'var(--transEx)')"></i>
-				<i class="fa-solid fa-star starIcon" id="starC" onclick="backColorcheck('starC', 'red', 'var(--transEx)')"></i>
-				<i class="fa-solid fa-star starIcon" id="starD" onclick="backColorcheck('starD', 'red', 'var(--transEx)')"></i>
-				<i class="fa-solid fa-star starIcon" id="starE" onclick="backColorcheck('starE', 'red', 'var(--transEx)')"></i>
+				<i class="fa-solid fa-star starIcon" id="starA" onclick="backColorcheck('starA', 'var(--Green)', 'var(--Invisible)')"></i>
+				<i class="fa-solid fa-star starIcon" id="starB" onclick="backColorcheck('starB', 'var(--Green)', 'var(--Invisible)')"></i>
+				<i class="fa-solid fa-star starIcon" id="starC" onclick="backColorcheck('starC', 'var(--Green)', 'var(--Invisible)')"></i>
+				<i class="fa-solid fa-star starIcon" id="starD" onclick="backColorcheck('starD', 'var(--Green)', 'var(--Invisible)')"></i>
+				<i class="fa-solid fa-star starIcon" id="starE" onclick="backColorcheck('starE', 'var(--Green)', 'var(--Invisible)')"></i>
 			</div>
 			<input type="checkbox" name="starA" class="ocultar">
 			<input type="checkbox" name="starB" class="ocultar">

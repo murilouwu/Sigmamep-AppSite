@@ -33,8 +33,8 @@
 	 		</div>
 	 		<div class="checks">
 	 			<div class="botons">
-	 				<i class="fa-solid fa-computer btnCheck" id="btncheck0" onclick="backColorcheck('btncheck0', 'var(--text2Ex)', 'var(--baseEx)')"></i>
-	 				<i class="fa-solid fa-shirt btnCheck" id="btncheck1" onclick="backColorcheck('btncheck1', 'var(--text2Ex)', 'var(--baseEx)')"></i>
+	 				<i class="fa-solid fa-computer btnCheck" id="btncheck0" onclick="backColorcheck('btncheck0', 'var(--WhiteBrown)', 'var(--Gray)')"></i>
+	 				<i class="fa-solid fa-shirt btnCheck" id="btncheck1" onclick="backColorcheck('btncheck1', 'var(--WhiteBrown)', 'var(--Gray)')"></i>
 	 			</div>
 	 			<input class="ocultar" type="checkbox" name="produto">
 	 			<input class="ocultar" type="checkbox" name="cosmesticos">

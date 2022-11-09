@@ -1,13 +1,13 @@
 @import "vars.css";
 
 body{
-	background: var(--colorAEx);
+	background: var(--Black);
 }
 
 .topo{
 	width: 100vw;
 	display: flex;
-	background-color: var(--text2Ex);
+	background-color: var(--WhiteBrown);
 	height: 7vh;
 	flex-direction: column;
 }
@@ -15,7 +15,7 @@ body{
 		display: flex;
 		height: 100%;
 		justify-content: space-around;
-		background-color: var(--text2Ex);
+		background-color: var(--WhiteBrown);
 		align-items: center;
 		padding-top: 1vh;
 		z-index: 10;
@@ -38,7 +38,7 @@ body{
 			justify-content: space-around;
 			height: 100%;
 			align-items: center;
-			color: var(--baseEx);
+			color: var(--White);
 			margin-left: -14vw;
 		}
 			.Nvlink{
@@ -46,14 +46,14 @@ body{
 				width: 25%;
 				font-size: 1em;
 				text-align: center;
-				color: var(--colorBEx);
-				background-color: var(--transEx);
+				color: var(--White);
+				background-color: var(--Invisible);
 				border: none;
 				transition: 0.025s;
 			}
 				.Nvlink:hover{
 					height: 150%;
-					background-color: rgba(0 0 0/ 20%);
+					background-color: var(--Black20);
 					backdrop-filter: blur(5px);
 					border-radius: 0px 0px 10px 10px;
 					cursor: pointer;
@@ -73,10 +73,10 @@ body{
 			border: none;
 			text-align: center;
 			border-radius: 20px;
-			color: var(--baseEx);
+			color: var(--Black);
 			font-family: 'ComicBook';
 			font-size: 1em;
-			background: var(--colorAEx);
+			background: var(--Green);
 		}
 			.topo-nvLogin:hover{
 				width: 25%;
@@ -85,7 +85,7 @@ body{
 
 .pesquisa{
 	display: flex;
-	background-color: var(--baseEx);
+	background-color: var(--Gray);
 	height: 22vh;
 	margin-top: 9vh;
 	width: 60vw;
@@ -95,7 +95,7 @@ body{
 }
 	.bars{
 		display: flex;
-		background-color: var(--colorBEx);
+		background-color: var(--Invisible);
 		width: 100%;
 		flex-direction: column;
 		height: 70%;
@@ -111,7 +111,7 @@ body{
 			padding-left: 10%;
 		}
 			.ISearch{
-				color: var(--text2Ex);
+				color: var(--Green);
 				width: 3vw;
 				text-align: center;
 				font-size: 3vh;
@@ -125,17 +125,22 @@ body{
 				font-family: 'ComicBook';
 				font-size: 2vh;
 				padding-left: 1vw;
-				color: var(--colorBEx);
+				color: var(--Green);
+				background-color: var(--Black);
 			}
+				.barInputA::placeholder{
+					color: var(--Gray);
+				}
 				.barInputA:hover{
 					cursor: pointer;
 				}
 				.barInputA:focus{
-					border: 3px solid var(--baseEx);
+					border: 3px solid var(--WhiteGreen);
+					background-color: var(--Black);
 				}
 			.IMenu{
 				width: 2vw;
-				color: var(--text2Ex);
+				color: var(--Green);
 				margin-left: 1vw;
 				font-size: 3vh;
 			}	
@@ -152,7 +157,7 @@ body{
 		}
 			.ISearchB{
 				width: 2vw;
-				color: var(--text2Ex);
+				color: var(--Green);
 				font-size: 3vh;
 			}
 			.barInputB{
@@ -163,13 +168,17 @@ body{
 			    font-family: 'ComicBook';
 			    font-size: 2vh;
 			    padding-left: 1vw;
-			    color: var(--colorBEx);
+			    color: var(--Green);
+			    background-color: var(--Black);
 			}
+				.barInputB::placeholder{
+					color: var(--Gray);
+				}
 				.barInputB:hover{
-					display: flex;
+					cursor: pointer;
 				}
 				.barInputB:focus{
-					border: 3px solid var(--baseEx);
+					border: 3px solid var(--WhiteGreen);
 				}
 	.checks{
 		display: flex;
@@ -187,9 +196,9 @@ body{
 			.btnCheck{
 				clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
 				width: 10vw;
-				background-color: var(--baseEx);
+				background-color: var(--Gray);
 				font-size: 5vh;
-				color: var(--colorBEx);
+				color: var(--White);
 				border: none;
 				text-align: center;
 				padding-top: 3vh;
@@ -203,20 +212,22 @@ body{
 	height: auto;
 	margin-top: 18vh;
 	flex-direction: column;
-	background-color: var(--text2Ex);
+	background-color: var(--Gray);
 	align-items: center;
-	color: var(--colorBEx);
+	color: var(--Green);
 	font-family: 'ComicBook';
 }
 	.pag{
 		display: flex;
-		background-color: var(--baseEx);
-		width: 7vw;height: 9vh;
+		background-color: var(--Green);
+		width: 7vw;
+		height: 9vh;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		border-radius: 15px;
-		font-size: 1em;color: var(--text2Ex);
+		font-size: 1em;
+		color: var(--Black);
 		position: absolute;
 		margin: -4vh 0vw 0vh 89vw;
 	}
@@ -253,7 +264,7 @@ body{
 				display: flex;
 				width: 90%;
 				height: 70%;
-				background-color: var(--colorAEx);
+				background-color: var(--Black);
 				background-position: center;
 				background-size: contain;
 				background-repeat: no-repeat;
@@ -265,7 +276,7 @@ body{
 				text-align: center;
 				display: flex;
 				justify-content: space-between;
-				color: var(--text2Ex);
+				color: var(--Green);
 			}
 				.PgCdDt-Name{
 					width: 47%;
@@ -281,8 +292,8 @@ body{
 		display: flex;
 		width: 100vw;
 		height: 8vh;
-		background-color: var(--baseEx);
-		color: var(--colorBEx);
+		background-color: var(--Brown);
+		color: var(--WhiteGreen);
 		margin-top: 2vh;
 		align-items: center;
 		justify-content: center;
@@ -295,22 +306,24 @@ body{
 			border: none;
 			margin-right: 1vw;
 			font-family: 'ComicBook';
-			color: var(--colorBEx);
-			background-color: var(--text2Ex);
+			color: var(--WhiteGreen);
+			background-color: var(--WhiteBrown);
 			font-size: 2vh;
 		}
 			.pagbutton:hover{
 				width: 5vw;
-				box-shadow: 0px 0px 10px var(--text2Ex);
+				box-shadow: 0px 0px 10px var(--WhiteGreen);
+				background-color: var(--Black);
+				color: var(--Green);
 			}
 			.pagEs{
-				background-color: var(--colorBEx);
-				color: var(--text2Ex);
+				background-color: var(--WhiteGreen);
+				color: var(--Black);
 			}
 		.pontospag{
 			display: flex;
 			font-family: 'ComicBook';
 			font-size: 3vh;
 			margin-right: 1vw;
-			color: var(--colorBEx);
+			color: var(--WhiteGreen);
 		}

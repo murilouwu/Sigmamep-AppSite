@@ -1,17 +1,4 @@
-:root{
-  /*cores para exprerimento*/
-  --Black: rgb(49 45 52);
-    --Black20: rgba(49 45 52/ 20%);
-    --Black50: rgba(49 45 52/ 50%);
-    --Black80: rgba(49 45 52/ 80%);
-  --Gray: rgb(94 95 109);
-  --Brown: rgb(91 75 62);
-  --WhiteBrown: rgb(134 115 101);
-  --Green: rgb(95 230 88);
-  --WhiteGreen: rgb(193 248 181);
-  --White: rgb(255 235 245);
-  --Invisible: rgba(0 0 0/ 0%);
-}
+@import "cores.css";
   *{
     margin: 0px;
     padding: 0px;

@@ -9,7 +9,7 @@
 	}
 }
 body{
-	background: var(--colorAEx);
+	background: var(--Black);
 }
 .topo{
 	width: 100vw;
@@ -26,13 +26,13 @@ body{
 		border: none;
 		text-align: center;
 		font-family: 'ComicBook';
-		color: var(--colorBEx);
+		color: var(--Black);
 		font-size: 3vh;
-		background-color: var(--baseEx);
+		background-color: var(--Green);
 	}
 		.backButton:hover{
 			width: 15vw;
-			box-shadow: 0px 0px 10px 3px var(--baseEx);
+			box-shadow: 0px 0px 10px 3px var(--Green);
 			cursor: pointer;
 		}
 .perfil{
@@ -46,18 +46,21 @@ body{
 }
 		.formMos{
 			display: flex;
-			background-color: blueviolet;
+			background-color: var(--WhiteBrown);
 			height: 12vw;
 			width: 85vw;
 			align-items: center;
+			border: 3px solid var(--Green);
+			border-right: none;
 		}
 		.imgPerfil{
 			display: flex;
-			background: green;
+			background: var(--WhiteBrown);
 			width: 15vw;
 			height: 15vw;
 			border-radius: 10vw;
 			margin-right: 2vw;
+			box-shadow: 0px 0px 6px var(--Black);
 			margin-left: -8vw;
 		}
 			.imgPerfil:hover{
@@ -77,12 +80,12 @@ body{
 			.textMosPerfil{
 				width: 80%;
 				text-align: center;
-				border-bottom: 2px solid var(--text2Ex);
-				color: var(--colorBEx);
+				border-bottom: 2px solid var(--WhiteGreen);
+				color: var(--White);
 				padding-bottom: 1vh;
 			}
 				.senhaIcon{
-					color: var(--text2Ex);
+					color: var(--WhiteGreen);
 					font-size: 3vh;
 					position: absolute;
 					margin: -8vh 22vw 0vh 0vw;
@@ -94,13 +97,14 @@ body{
 					cursor: pointer;
 				}
 			.LongTextMosPerfil{
-				background-color: darkgray;
+				background-color: var(--Black20);
 				width: 100%;
 				text-align: center;
 				height: 80%;
 				border-radius: 10px;
 				word-break: break-word;
 				overflow-y: overlay;
+				color: var(--WhiteGreen);
 			}
 				.LongTextMosPerfil:hover{
 					cursor: pointer;
@@ -112,16 +116,16 @@ body{
 			border: none;
 			text-align: center;
 			border-radius: 20px;
-			color: var(--baseEx);
+			color: var(--Black);
 			font-family: 'ComicBook';
 			font-size: 2vh;
-			background: var(--text2Ex);
+			background: var(--WhiteGreen);
 			margin: 4vh 0vw 0vh -8vw;
 		}
 			.btnUp:hover{
 				cursor: pointer;
 				width: 18vw;
-				box-shadow: 0px 0px 10px var(--text2Ex);
+				box-shadow: 0px 0px 10px var(--Green);
 			}
 .pedidos{
 	display: flex;
@@ -136,14 +140,14 @@ body{
 	}
 	.titlePedidos{
 		width: 100%;
-		background: saddlebrown;
+		background: var(--Gray);
 		text-align: center;
 		font-size: 4vh;
 		font-weight: 900;
 		font-family: 'ComicBook';
 		padding: 2vh 0vw 2vh 0vw;
 		border-radius: 20px 20px 0px 0px;
-		color: var(--colorBEx);
+		color: var(--White);
 	}
 	.tablePedidos{
 		width: 100%;
@@ -153,12 +157,12 @@ body{
 		.tablePedidos .top{
 			display: flex;
 			width: 100%;
-			background-color: var(--text2Ex);
+			background-color: var(--WhiteGreen);
 			font-size: 2.5vh;
-			color: var(--colorBEx);
+			color: var(--Gray);
 		}
 			.tablePedidos .top .th1, .tablePedidos .top .th2, .tablePedidos .top .th3, .tablePedidos .top .th4, .tablePedidos .top .th5{
-				border-left: 2px solid var(--colorBEx);
+				border-left: 2px solid;
 				border-bottom: 4px solid;
 				padding: 2vh 0vw 2vh 0vw;
 			}
@@ -185,13 +189,13 @@ body{
 			}
 		.tablePedidos .body{
 			display: flex;
-			background-color: brown;
-			color: var(--text2Ex);
+			background-color: var(--WhiteBrown);
+			color: var(--WhiteGreen);
 			font-size: 2vh;
 			text-align: center;
 		}
 			.tablePedidos .status:hover{
-				background: hotpink;
+				background: var(--Black50);
 			}
 
 /*modals*/
@@ -206,7 +210,7 @@ body{
 	justify-content: center;
 }
 	.PerfilUpdate{
-		background-color: var(--text2Ex);
+		background-color: var(--WhiteBrown);
 		height: 70vh;
 		flex-direction: column;
 		width: 40vw;
@@ -214,12 +218,12 @@ body{
 		border-radius: 10px;
 		justify-content: center;
 		align-items: center;
-		box-shadow: 0px 0px 5vw 5px rgba(255 255 255 / 20%);
+		box-shadow: 0px 0px 1vw 1vw var(--Brown);
 		animation: 0.5s linear modal;
 	}
 		.X{
 			position: absolute;
-			color: var(--text2Ex);
+			color: var(--White);
 			margin: 0vh 54vw 66vh 0vw;
 			font-size: 4vh;
 		}
@@ -236,8 +240,8 @@ body{
 			justify-content: center;
 			align-items: center;
 			display: flex;
-			border: 1px solid var(--colorBEx);
-			color: var(--colorBEx);
+			border: 1px solid var(--Brown);
+			color: var(--White);
 			font-size: 2vh;
 			border-radius: 8px;
 			font-family: 'ComicBook';
@@ -246,7 +250,7 @@ body{
 				width: 5vw;
 				height: 5vw;
 				border-radius: 50px;
-				background: bisque;
+				background: var(--Black50);
 			}
 			.fotoPerfilInput label{
 				margin-top: 1vh;
@@ -266,7 +270,7 @@ body{
 			flex-direction: column;
 			justify-content: space-around;
 			align-items: center;
-			border: 1px solid var(--colorBEx);
+			border: 1px solid var(--Brown);
 			border-radius: 5px;
 			width: 38vw;
 		}
@@ -276,17 +280,18 @@ body{
 				display: flex;
 				flex-direction: row;
 				align-items: center;
-				color: var(--colorBEx);
+				color: var(--White);
 				justify-content: center;
 			}
 				.InputText{
+					background-color: var(--Invisible);
 					margin-left: 1vw;
 					width: 100%;
-					border-bottom: 1px solid var(--colorBEx);
+					border-bottom: 1px solid var(--Brown);
 					border-top: none;
 					border-left: none;
 					border-right: none;
-					color: var(--colorBEx);
+					color: var(--Black);
 					padding-bottom: 1vh;
 					text-align: center;
 					font-family: 'ComicBook';
@@ -299,21 +304,22 @@ body{
 						cursor: pointer;
 					}
 					.InputText:focus{
-						background-color: rosybrown;
+						background-color: var(--Black);
 						border-width: 3px;
-						border-color: blueviolet;
+						border-color: var(--Green);
+						color: var(--Green);
 					}
 					.InputText::placeholder{
-						color: gray;
+						color: var(--Black);
 					}
 				.InputTextTextarea{
 					margin-left: 1vw;
 					width: 70%;
-					border-bottom: 1px solid var(--colorBEx);
+					border-bottom: 1px solid var(--Brown);
 					border-top: none;
 					border-left: none;
 					border-right: none;
-					color: var(--colorBEx);
+					color: var(--Black);
 					padding-bottom: 1vh;
 					text-align: center;
 					height: 7vh;
@@ -322,28 +328,30 @@ body{
 					overflow-y: overlay;
 					font-family: 'ComicBook';
 					border-radius: 7px;
+					background-color: var(--WhiteBrown);
 				}
 					.InputTextTextarea:hover{
 						cursor: pointer;
 					}
 					.InputTextTextarea:focus{
-						background-color: rosybrown;
+						background-color: var(--Black);
 						border-width: 3px;
-						border-color: blueviolet;
+						border-color: var(--Green);
+						color: var(--Green);
 					}
 					.InputTextTextarea::placeholder{
-						color: gray;
+						color: var(--Black);
 					}
 		.submitInputUpdateUser{
 			height: 10%;
 			width: 50%;
 			border-radius: 30px;
-			background-color: var(--colorAEx);
+			background-color: var(--Green);
 			border: none;
 			font-size: 3vh;
 			font-weight: bolder;
 			font-family: 'ComicBook';
-			color: var(--text2Ex);
+			color: var(--Black);
 		}
 			.submitInputUpdateUser:hover{
 				cursor: pointer;
@@ -351,7 +359,7 @@ body{
 			}
 
 	.comentProductBox{
-		background-color: var(--text2Ex);
+		background-color: var(--WhiteBrown);
 		height: 49vh;
 		flex-direction: column;
 		width: 40vw;
@@ -359,12 +367,12 @@ body{
 		border-radius: 10px;
 		justify-content: center;
 		align-items: center;
-		box-shadow: 0px 0px 5vw 5px rgba(255 255 255 / 20%);
+		box-shadow: 0px 0px 6vw 1vw var(--WhiteBrown);
 		animation: 0.5s linear modal;
 	}
 		.X2{
 			position: absolute;
-			color: var(--text2Ex);
+			color: var(--White);
 			margin: 0vh 54vw 66vh 0vw;
 			font-size: 4vh;
 		}
@@ -379,15 +387,15 @@ body{
 			flex-direction: row;
 			justify-content: space-around;
 			align-items: center;
-			border: 1px solid var(--colorBEx);
+			border: 1px solid var(--WhiteGreen);
 			border-radius: 5px;
 			width: 38vw;
 			font-size: 4vh;
-			background-color: gray;
+			background-color: var(--WhiteGreen);
 		}
 			.starIcon{
-				color: var(--text2Ex);
-				background: var(--transEx);
+				color: var(--Black);
+				background: var(--Invisible);
 				padding: 1vw;
 				border-radius: 50px;
 			}
@@ -398,8 +406,8 @@ body{
 		.ComentProductInput{
 			margin-left: 1vw;
 			width: 70%;
-			border: 1px solid var(--colorBEx);
-			color: var(--colorBEx);
+			border: 1px solid var(--Brown);
+			color: var(--Black);
 			padding-bottom: 1vh;
 			text-align: center;
 			height: 21vh;
@@ -408,29 +416,31 @@ body{
 			overflow-y: overlay;
 			font-family: 'ComicBook';
 			border-radius: 7px;
+			background-color: var(--Invisible);
 			margin-bottom: 2vh;
 		}
 			.ComentProductInput:hover{
 				cursor: pointer;
 			}
 			.ComentProductInput:focus{
-				background-color: rosybrown;
+				background-color: var(--Black);
 				border-width: 3px;
-				border-color: blueviolet;
+				border-color: var(--Green);
+				color: var(--Green);
 			}
 			.ComentProductInput::placeholder{
-				color: gray;
+				color: var(--Black);
 			}
 		.ComentEnv{
 			height: 10%;
 			width: 50%;
 			border-radius: 30px;
-			background-color: var(--colorAEx);
+			background-color: var(--WhiteGreen);
 			border: none;
 			font-size: 3vh;
 			font-weight: bolder;
 			font-family: 'ComicBook';
-			color: var(--text2Ex);
+			color: var(--Black);
 		}
 			.ComentEnv:hover{
 				cursor: pointer;

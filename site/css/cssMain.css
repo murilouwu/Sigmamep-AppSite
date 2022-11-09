@@ -10,7 +10,7 @@ body{
 	height: 75vh;
 	flex-direction: column;
 	opacity: 1;
-	background: radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#a38c7c 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #a38c7c 1.6px, #513f30 1.6px) -0.8px 0;
+	background: radial-gradient(circle, transparent 20%, var(--Brown) 20%, var(--Brown) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--Brown) 20%, var(--Brown) 80%, transparent 80%, transparent) 20px 20px, linear-gradient(var(--WhiteBrown) 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, var(--WhiteBrown) 1.6px, var(--Brown) 1.6px) -0.8px 0;
 	background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 }
 	.topo-nav{
@@ -74,7 +74,7 @@ body{
 			border: none;
 			text-align: center;
 			border-radius: 20px;
-			color: var(--WhiteGreen);
+			color: var(--Black);
 			font-family: 'ComicBook';
 			font-size: 1em;
 			background: var(--WhiteGreen);
@@ -97,6 +97,7 @@ body{
 			justify-content: center;
 			flex-direction: column;
 			font-family: 'ComicBook';
+			color: var(--White);
 		}
 			.BdTitle{
 				font-size: 3em;
@@ -127,7 +128,7 @@ body{
 				margin-top: -79vh;
 				position: absolute;
 				opacity: 1;
-				background: radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#a38c7c 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #a38c7c 1.6px, #513f30 1.6px) -0.8px 0;
+				background: radial-gradient(circle, transparent 20%, var(--Brown) 20%, var(--Brown) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--Brown) 20%, var(--Brown) 80%, transparent 80%, transparent) 20px 20px, linear-gradient(var(--WhiteBrown) 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, var(--WhiteBrown) 1.6px, var(--Brown) 1.6px) -0.8px 0;
 				background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 			}
 				.tapaTitle{
@@ -135,8 +136,7 @@ body{
 					margin: 23vh 0vw 0vh 12vw;
 					font-size: 7vh;
 					transform: rotate(341deg);
-					color:
-					var(--baseEx);
+					color: var(--White);
 				}
 					.tapaTitle span{
 						color: var(--colorBEx);
@@ -152,7 +152,7 @@ body{
 				transform: rotate(2deg);
 				margin-top: 59vh;
 				opacity: 1;
-				background: radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #513f30 20%, #513f30 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#a38c7c 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #a38c7c 1.6px, #513f30 1.6px) -0.8px 0;
+				background: radial-gradient(circle, transparent 20%, var(--Brown) 20%, var(--Brown) 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, var(--Brown) 20%, var(--Brown) 80%, transparent 80%, transparent) 20px 20px, linear-gradient(var(--WhiteBrown) 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, var(--WhiteBrown) 1.6px, var(--Brown) 1.6px) -0.8px 0;
 				background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
 			}
 			.Ban-MolimgA{
@@ -164,7 +164,7 @@ body{
 				display: flex;
 				z-index: 1;
 				width: 27vw;
-				margin-top: -79vh;
+				margin-top: -83vh;
 				margin-left: 2vw;
 			}
 
@@ -175,7 +175,7 @@ body{
 	height: auto;
 	margin-top: 6vh;
 	align-items: center;
-	color: var(--text2Ex);
+	color: var(--Green);
 	font-family: 'ComicBook';
 }
 	.CenterText{
@@ -183,6 +183,7 @@ body{
 		font-size: 3em;
 		margin-bottom: 3vh;
 		cursor: default;
+		color: var(--White);
 	}
 	.Crt-Scroll{
 		display: flex;
@@ -216,7 +217,7 @@ body{
 					font-size: 6em;
 				}
 				.icon{
-					color: var(--text2Ex);
+					color: var(--Gray);
 					width: 8vw;
 					height: 8vw;
 					border-radius: 100px;
@@ -228,22 +229,21 @@ body{
 				}
 				.itCd-name{
 					font-size: 1.5em;
-					margin-top: -2vh;
+					margin-top: -1vh;
 					width: 90%;
 					text-align: center;
-					color: var(--text2Ex);
 				}
 	.Crt-Result{
 		width: 100%;
 		flex-direction: column;
 		display: flex;
 		align-items: center;
-		background-color: var(--text2Ex);
+		background-color: var(--Gray);
 	}
 		.Ctr-Name{
 			font-size: 3em;
 			margin-bottom: 3vh;
-			color: var(--baseEx);
+			color: var(--White);
 			cursor: default;
 		}
 		.Crt-PageCategory{
@@ -276,7 +276,7 @@ body{
 					display: flex;
 					width: 90%;
 					height: 70%;
-					background-color: var(--colorAEx);
+					background-color: var(--Black);
 					background-position: center;
 					background-size: contain;
 					background-repeat: no-repeat;
@@ -315,8 +315,8 @@ body{
 			border: none;
 			font-size: 1.5em;
 			border-radius: 25px;
-			background-color: var(--baseEx);
-			color: var(--text2Ex);
+			background-color: var(--Green);
+			color: var(--Black);
 		}
 			.btn-control:hover{
 				width: 45%;
@@ -327,7 +327,7 @@ body{
 	display: flex;
 	width: 100vw;
 	height: 5vh;
-	color: var(--text2Ex);
+	color: var(--Green);
 	justify-content: center;
 	align-items: center;
 	font-size: 2em;
