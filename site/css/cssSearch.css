@@ -1,0 +1,329 @@
+@import "vars.css";
+
+body{
+	background: var(--Black);
+}
+
+.topo{
+	width: 100vw;
+	display: flex;
+	background-color: var(--WhiteBrown);
+	height: 7vh;
+	flex-direction: column;
+}
+	.topo-nav{
+		display: flex;
+		height: 100%;
+		justify-content: space-around;
+		background-color: var(--WhiteBrown);
+		align-items: center;
+		padding-top: 1vh;
+		z-index: 10;
+		padding-bottom: 1vh;
+	}
+		.topo-nvlogo{
+			display: flex;
+			width: 2vw;
+			height: 2vw;
+			border-radius: 25px;
+			margin-left: -6vw;
+			background-image: url('../imgs/logo.png');
+			background-position: center;
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		.topo-nvlinks{
+			width: 46%;
+			display: flex;
+			justify-content: space-around;
+			height: 100%;
+			align-items: center;
+			color: var(--White);
+			margin-left: -14vw;
+		}
+			.Nvlink{
+				font-family: 'ComicBook';
+				width: 25%;
+				font-size: 1em;
+				text-align: center;
+				color: var(--White);
+				background-color: var(--Invisible);
+				border: none;
+				transition: 0.025s;
+			}
+				.Nvlink:hover{
+					height: 150%;
+					background-color: var(--Black20);
+					backdrop-filter: blur(5px);
+					border-radius: 0px 0px 10px 10px;
+					cursor: pointer;
+				}
+		.NvLupa{
+			cursor: pointer;
+			font-size: 1.5em;
+			color: var(--colorBEx);
+			margin-left: -12vw;
+		}
+			.NvLupa:hover{
+				font-size: 2em;
+			}
+		.topo-nvLogin{
+			width: 19%;
+			height: 100%;
+			border: none;
+			text-align: center;
+			border-radius: 20px;
+			color: var(--Black);
+			font-family: 'ComicBook';
+			font-size: 1em;
+			background: var(--Green);
+		}
+			.topo-nvLogin:hover{
+				width: 25%;
+				cursor: pointer;
+			}
+
+.pesquisa{
+	display: flex;
+	background-color: var(--Gray);
+	height: 22vh;
+	margin-top: 9vh;
+	width: 60vw;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+}
+	.bars{
+		display: flex;
+		background-color: var(--Invisible);
+		width: 100%;
+		flex-direction: column;
+		height: 70%;
+		align-items: center;
+		border-radius: 10px;
+	}
+		.barA{
+			display: flex;
+			width: 90%;
+			height: 30%;
+			margin-top: 1vh;
+			align-items: center;
+			padding-left: 10%;
+		}
+			.ISearch{
+				color: var(--Green);
+				width: 3vw;
+				text-align: center;
+				font-size: 3vh;
+			}
+			.barInputA{
+				display: flex;
+				height: 100%;
+				width: 80%;
+				border: none;
+				border-radius: 10px;
+				font-family: 'ComicBook';
+				font-size: 2vh;
+				padding-left: 1vw;
+				color: var(--Green);
+				background-color: var(--Black);
+			}
+				.barInputA::placeholder{
+					color: var(--Gray);
+				}
+				.barInputA:hover{
+					cursor: pointer;
+				}
+				.barInputA:focus{
+					border: 3px solid var(--WhiteGreen);
+					background-color: var(--Black);
+				}
+			.IMenu{
+				width: 2vw;
+				color: var(--Green);
+				margin-left: 1vw;
+				font-size: 3vh;
+			}	
+				.IMenu:hover{
+					font-size: 4vh;
+				}
+		.barB{
+			display: none;
+			border-radius: 10px;
+			margin-top: 3vh;
+			width: 60%;
+			align-items: center;
+			justify-content: space-between;
+		}
+			.ISearchB{
+				width: 2vw;
+				color: var(--Green);
+				font-size: 3vh;
+			}
+			.barInputB{
+			    height: 100%;
+			    width: 40%;
+			    border: none;
+			    border-radius: 10px;
+			    font-family: 'ComicBook';
+			    font-size: 2vh;
+			    padding-left: 1vw;
+			    color: var(--Green);
+			    background-color: var(--Black);
+			}
+				.barInputB::placeholder{
+					color: var(--Gray);
+				}
+				.barInputB:hover{
+					cursor: pointer;
+				}
+				.barInputB:focus{
+					border: 3px solid var(--WhiteGreen);
+				}
+	.checks{
+		display: flex;
+		width: 100%;
+		justify-content: center;
+	}
+		.botons{
+			display: flex;
+			position: absolute;
+			margin: 0vh 0vw 0vh 0vw;
+			width: 34vw;
+			height: 13vh;
+			justify-content: space-around;
+		}
+			.btnCheck{
+				clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+				width: 10vw;
+				background-color: var(--Gray);
+				font-size: 5vh;
+				color: var(--White);
+				border: none;
+				text-align: center;
+				padding-top: 3vh;
+			}
+				.btnCheck:hover{
+					width: 14vw;
+				}
+.pages{
+	display: flex;
+	width: 100vw;
+	height: auto;
+	margin-top: 18vh;
+	flex-direction: column;
+	background-color: var(--Gray);
+	align-items: center;
+	color: var(--Green);
+	font-family: 'ComicBook';
+}
+	.pag{
+		display: flex;
+		background-color: var(--Green);
+		width: 7vw;
+		height: 9vh;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		border-radius: 15px;
+		font-size: 1em;
+		color: var(--Black);
+		position: absolute;
+		margin: -4vh 0vw 0vh 89vw;
+	}
+		.iconPage{
+			font-size: 3vh;
+		}
+	.page{	
+		display: flex;
+		width: 95%;
+		font-family: 'ComicBook';
+		flex-flow: wrap;
+		justify-content: center;
+	}
+		.PgCard{
+			display: flex;
+			width: 19vw;
+			height: 19vw;
+			border-radius: 20px;
+			background: black;
+			margin-top: 2vh;
+			justify-content: center;
+			align-items: center;
+			margin-left: 4vw;
+			flex-flow: column;
+		}
+			.PgCard:hover{
+				cursor: pointer;
+				width: 20vw;
+				height: 20vw;
+				margin-left: 4vw;
+				flex-flow: column;
+			}
+			.PgCd-Img{
+				display: flex;
+				width: 90%;
+				height: 70%;
+				background-color: var(--Black);
+				background-position: center;
+				background-size: contain;
+				background-repeat: no-repeat;
+				margin-bottom: 2vh;
+				border-radius: 15px;
+			}
+			.PgCd-Data{
+				width: 86%;
+				text-align: center;
+				display: flex;
+				justify-content: space-between;
+				color: var(--Green);
+			}
+				.PgCdDt-Name{
+					width: 47%;
+					text-align: center;
+				}
+				.PgCdDt-Price{
+					display: flex;
+					width: 48%;
+					border-left: 2px solid;
+					padding-left: 5%;
+				}
+	.pags{
+		display: flex;
+		width: 100vw;
+		height: 8vh;
+		background-color: var(--Brown);
+		color: var(--WhiteGreen);
+		margin-top: 2vh;
+		align-items: center;
+		justify-content: center;
+	}
+		.pagbutton{
+			width: 3vw;
+			height: 80%;
+			border-radius: 10px;
+			text-align: center;
+			border: none;
+			margin-right: 1vw;
+			font-family: 'ComicBook';
+			color: var(--WhiteGreen);
+			background-color: var(--WhiteBrown);
+			font-size: 2vh;
+		}
+			.pagbutton:hover{
+				width: 5vw;
+				box-shadow: 0px 0px 10px var(--WhiteGreen);
+				background-color: var(--Black);
+				color: var(--Green);
+			}
+			.pagEs{
+				background-color: var(--WhiteGreen);
+				color: var(--Black);
+			}
+		.pontospag{
+			display: flex;
+			font-family: 'ComicBook';
+			font-size: 3vh;
+			margin-right: 1vw;
+			color: var(--WhiteGreen);
+		}
