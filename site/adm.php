@@ -8,9 +8,6 @@
 		<title>ADM-Painel</title>
 	</head>
 	<body>
-		<div class="topo">
-	 		<button class="Nvlink" onclick="red('index.php')">HOME</button>
-	 	</div>
 	 	<form class="pesquisa" method="post">
 	 		<div class="bars">
 	 			<div class="barA">
@@ -20,9 +17,9 @@
 	 		</div>
 	 		<div class="checks">
 	 			<div class="botons">
-	 				<i class="fa-solid fa-computer btnCheck" id="btncheck0" onclick="backColorcheck('btncheck0', 'var(--text2Ex)', 'var(--baseEx)')"></i>
-	 				<i class="fa-solid fa-shirt btnCheck" id="btncheck1" onclick="backColorcheck('btncheck1', 'var(--text2Ex)', 'var(--baseEx)')"></i>
-	 				<i class="fa-solid fa-users btnCheck" id="btncheck2" onclick="backColorcheck('btncheck2', 'var(--text2Ex)', 'var(--baseEx)')"></i>
+	 				<i class="fa-solid fa-computer btnCheck" id="btncheck0" onclick="backColorcheck('btncheck0', 'var(--WhiteBrown)', 'var(--Gray)')"></i>
+	 				<i class="fa-solid fa-shirt btnCheck" id="btncheck1" onclick="backColorcheck('btncheck1', 'var(--WhiteBrown)', 'var(--Gray)')"></i>
+	 				<i class="fa-solid fa-users btnCheck" id="btncheck2" onclick="backColorcheck('btncheck2', 'var(--WhiteBrown)', 'var(--Gray)')"></i>
 	 			</div>
 	 			<input class="ocultar" type="checkbox" name="produto">
 	 			<input class="ocultar" type="checkbox" name="cosmesticos">
@@ -74,6 +71,24 @@
 				<label class="pagNumber">34/56</label>
 			</div>
 			<div class="page">
+				<div class="PgCard">
+					<div class="PgCd-Img"></div>
+				</div>
+				<div class="PgCard">
+					<div class="PgCd-Img"></div>
+				</div>
+				<div class="PgCard">
+					<div class="PgCd-Img"></div>
+				</div>
+				<div class="PgCard">
+					<div class="PgCd-Img"></div>
+				</div>
+				<div class="PgCard">
+					<div class="PgCd-Img"></div>
+				</div>
+				<div class="PgCard">
+					<div class="PgCd-Img"></div>
+				</div>
 				<div class="PgCard">
 					<div class="PgCd-Img"></div>
 				</div>

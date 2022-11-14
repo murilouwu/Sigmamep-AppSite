@@ -3,35 +3,10 @@
 body{
 	background: var(--Black);
 }
-
-.topo{
-	width: 100vw;
-	display: flex;
-	height: 7vh;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-	.Nvlink{
-		width: 10vw;
-		height: 80%;
-		border-radius: 15px;
-		border: none;
-		text-align: center;
-		color: var(--Black);
-		font-size: 3vh;
-		background-color: var(--Green);
-		font-family: 'ComicBook';
-	}
-		.Nvlink:hover{
-			width: 15vw;
-			box-shadow: 0px 0px 10px 3px var(--Green);
-			cursor: pointer;
-		}
 .pesquisa{
 	display: flex;
 	background-color: var(--Gray);
-	height: 14vh;
+	height: 22vh;
 	margin-top: 9vh;
 	width: 60vw;
 	flex-direction: column;
@@ -40,18 +15,18 @@ body{
 }
 	.bars{
 		display: flex;
+		background-color: var(--Invisible);
 		width: 100%;
 		flex-direction: column;
-		height: 30%;
+		height: 70%;
 		align-items: center;
 		border-radius: 10px;
-		justify-content: center;
 	}
 		.barA{
 			display: flex;
 			width: 90%;
-			height: 80%;
-			margin-top: 0vh;
+			height: 30%;
+			margin-top: 1vh;
 			align-items: center;
 			padding-left: 10%;
 		}
@@ -70,7 +45,7 @@ body{
 				font-family: 'ComicBook';
 				font-size: 2vh;
 				padding-left: 1vw;
-				color: var(--WhiteBrown);
+				color: var(--Green);
 				background-color: var(--Black);
 			}
 				.barInputA::placeholder{
@@ -81,11 +56,11 @@ body{
 				}
 				.barInputA:focus{
 					border: 3px solid var(--WhiteGreen);
-					color: var(--Green);
+					background-color: var(--Black);
 				}
 			.IMenu{
 				width: 2vw;
-				color: var(--text2Ex);
+				color: var(--Green);
 				margin-left: 1vw;
 				font-size: 3vh;
 			}	
@@ -102,7 +77,7 @@ body{
 		}
 			.ISearchB{
 				width: 2vw;
-				color: var(--text2Ex);
+				color: var(--Green);
 				font-size: 3vh;
 			}
 			.barInputB{
@@ -113,13 +88,17 @@ body{
 			    font-family: 'ComicBook';
 			    font-size: 2vh;
 			    padding-left: 1vw;
-			    color: var(--colorBEx);
+			    color: var(--Green);
+			    background-color: var(--Black);
 			}
+				.barInputB::placeholder{
+					color: var(--Gray);
+				}
 				.barInputB:hover{
-					display: flex;
+					cursor: pointer;
 				}
 				.barInputB:focus{
-					border: 3px solid var(--baseEx);
+					border: 3px solid var(--WhiteGreen);
 				}
 	.checks{
 		display: flex;
@@ -129,9 +108,9 @@ body{
 		.botons{
 			display: flex;
 			position: absolute;
-			margin: 2vh 0vw 0vh 0vw;
+			margin: 0vh 0vw 0vh 0vw;
 			width: 34vw;
-			height: 12vh;
+			height: 13vh;
 			justify-content: space-around;
 		}
 			.btnCheck{
@@ -139,7 +118,7 @@ body{
 				width: 10vw;
 				background-color: var(--Gray);
 				font-size: 5vh;
-				color: var(--Green);
+				color: var(--White);
 				border: none;
 				text-align: center;
 				padding-top: 3vh;
@@ -154,20 +133,22 @@ body{
 	height: auto;
 	margin-top: 9vh;
 	align-items: center;
-	color: var(--text2Ex);
+	color: var(--Green);
 	font-family: 'ComicBook';
 }
 	.CenterText{
 		display: flex;
-		font-size: 3vh;
+		font-size: 4vh;
 		margin-bottom: 3vh;
 		cursor: default;
+		color: var(--White);
 	}
 	.Crt-Scroll{
 		display: flex;
 		height: 27vh;
 		width: 100vw;
 		overflow-x: overlay;
+		margin-bottom: 6vh;
 		flex-direction: row;
 	}
 		.Crt-Scrollitens{
@@ -178,14 +159,16 @@ body{
 		}
 			.itCard{
 				display: flex;
-				width: 12vw;
-				height: 90%;
-				background-color: var(--baseEx);
+				width: 24vw;
+				height: 85%;
+				background-color: var(--Green);
 				flex-direction: column;
 				align-items: center;
 				justify-content: center;
 				margin-left: 2vw;
-				border-radius: 25px;
+				border-radius: 11px;
+				color: var(--Black);
+				font-size: 2vh;
 			}
 				.itCard:hover{
 					cursor: pointer;
@@ -194,7 +177,7 @@ body{
 					font-size: 6em;
 				}
 				.icon{
-					color: var(--text2Ex);
+					color: var(--White);
 					width: 8vw;
 					height: 8vw;
 					border-radius: 100px;
@@ -205,33 +188,33 @@ body{
 					margin-top: 0vh;
 				}
 				.itCd-name{
-					font-size: 1.5vh;
-					margin-top: -2vh;
+					font-size: 1.5em;
+					margin-top: -1vh;
 					width: 90%;
 					text-align: center;
-					color: var(--text2Ex);
 				}
-
 .pages{
 	display: flex;
 	width: 100vw;
 	height: auto;
-	margin-top: 7vh;
+	margin-top: -3vh;
 	flex-direction: column;
-	background-color: var(--text2Ex);
+	background-color: var(--Gray);
 	align-items: center;
-	color: var(--colorBEx);
+	color: var(--Green);
 	font-family: 'ComicBook';
 }
 	.pag{
 		display: flex;
-		background-color: var(--baseEx);
-		width: 7vw;height: 9vh;
+		background-color: var(--Green);
+		width: 7vw;
+		height: 9vh;
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		border-radius: 15px;
-		font-size: 1em;color: var(--text2Ex);
+		font-size: 1em;
+		color: var(--Black);
 		position: absolute;
 		margin: -4vh 0vw 0vh 89vw;
 	}
@@ -247,8 +230,8 @@ body{
 	}
 		.PgCard{
 			display: flex;
-			width: 15vw;
-			height: 15vw;
+			width: 19vw;
+			height: 19vw;
 			border-radius: 20px;
 			background: black;
 			margin-top: 2vh;
@@ -259,16 +242,16 @@ body{
 		}
 			.PgCard:hover{
 				cursor: pointer;
-				width: 15vw;
-				height: 16vw;
-				box-shadow: 0px 0px 9px 3px var(--colorBEx);
+				width: 20vw;
+				height: 20vw;
+				margin-left: 4vw;
 				flex-flow: column;
 			}
 			.PgCd-Img{
 				display: flex;
-				width: 100%;
-				height: 100%;
-				background-color: var(--colorAEx);
+				width: 93%;
+				height: 92%;
+				background-color: var(--Black);
 				background-position: center;
 				background-size: contain;
 				background-repeat: no-repeat;
@@ -278,8 +261,8 @@ body{
 		display: flex;
 		width: 100vw;
 		height: 8vh;
-		background-color: var(--baseEx);
-		color: var(--colorBEx);
+		background-color: var(--Brown);
+		color: var(--WhiteGreen);
 		margin-top: 2vh;
 		align-items: center;
 		justify-content: center;
@@ -292,22 +275,24 @@ body{
 			border: none;
 			margin-right: 1vw;
 			font-family: 'ComicBook';
-			color: var(--colorBEx);
-			background-color: var(--text2Ex);
+			color: var(--WhiteGreen);
+			background-color: var(--WhiteBrown);
 			font-size: 2vh;
 		}
 			.pagbutton:hover{
 				width: 5vw;
-				box-shadow: 0px 0px 10px var(--text2Ex);
+				box-shadow: 0px 0px 10px var(--WhiteGreen);
+				background-color: var(--Black);
+				color: var(--Green);
 			}
 			.pagEs{
-				background-color: var(--colorBEx);
-				color: var(--text2Ex);
+				background-color: var(--WhiteGreen);
+				color: var(--Black);
 			}
 		.pontospag{
 			display: flex;
 			font-family: 'ComicBook';
 			font-size: 3vh;
 			margin-right: 1vw;
-			color: var(--colorBEx);
+			color: var(--WhiteGreen);
 		}
