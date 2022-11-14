@@ -139,32 +139,11 @@ body{
 				padding: 1vh 2vw 0vh 2vw;
 				border-radius: 25px 25px 0px 0px;
 			}
-	.cadastrar{
-		position: absolute;
-		height: 4vh;
-		border: none;
-		border-radius: 30px;
-		width: 16vw;
-		font-family: 'ComicBook';
-		text-align: center;
-		font-size: 2vh;
-		color: var(--Green);
-		background-color: var(--Black);
-		margin-top: -81vh;
-		margin-left: 74vw;
-	}
-		.cadastrar:hover{
-			width: 18vw;
-			height: 6vh;
-			font-size: 3vh;
-			border: 4px solid var(--Black);
-			cursor: pointer;
-		}
 	.blur{
 		background-color: rgba(0 0 0/ 60%);
-		width: 50vw;
+		width: 30vw;
 		height: 100vh;
-		margin-left: -50vw;
+		margin-left: -70vw;
 		position: absolute;
 		backdrop-filter: blur(9px);
 		display: none;
@@ -173,8 +152,8 @@ body{
 		display: none;
 		position: absolute;
 		height: 100vh;
-		width: 50vw;
-		margin-left: 50vw;
+		width: 70vw;
+		margin-left: 30vw;
 		background-color: var(--Brown);
 		flex-direction: column;
 		align-items: center;
@@ -184,13 +163,13 @@ body{
 			display: flex;
 			width: 7vw;
 			height: 7vw;
-			margin-left: -58vw;
+			margin-left: -83vw;
 			border: none;
 			background-color: var(--Invisible);
 			align-items: center;
 			justify-content: center;
 			color: var(--White);
-			font-size: 6vh;
+			font-size: 5vh;
 		}
 			.X:hover{
 				font-size: 7vh;
@@ -239,7 +218,7 @@ body{
 					display: flex;
 					margin-top: 2vh;
 					height: 5vh;
-					width: 80%;
+					width: 94%;
 					border-bottom: 3px solid var(--Black50);
 					align-items: center;
 					justify-content: flex-start;
@@ -253,7 +232,7 @@ body{
 						font-size: 4vh;
 					}
 					.CdInInput{
-						width: 34vw;
+						width: 58vw;
 						padding-left: 1vw;
 						height: 100%;
 						border: none;
@@ -276,21 +255,21 @@ body{
 						}
 				.CadEnv{
 					position: absolute;
-					height: 5vh;
+					height: 13vh;
 					border: none;
 					border-radius: 30px;
-					width: 15vw;
+					width: 42vw;
 					font-family: 'ComicBook';
 					text-align: center;
-					font-size: 3vh;
+					font-size: 6vh;
 					color: var(--Black);
 					background-color: var(--Green);
-					margin-top: 62vh;
-					margin-right: 10vw;
+					margin-top: 22vh;
+					margin-right: 12vw;
 				}
 					.CadEnv:hover{
-						width: 18vw;
-						height: 8vh;
-						border: 3px solid;
+						width: 48vw;
+						height: 20vh;
+						border: 4px solid;
 						cursor: pointer;
 					}
