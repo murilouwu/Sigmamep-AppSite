@@ -10,5 +10,4 @@ function GravaAluno()
 	xmlhttp.send();
 	//alert("Gravado com sucesso no servidor");
 
-	/* https://www.blogson.com.br/como-gravar-dados-no-banco-de-dados-usando-ajax/ */
 }
