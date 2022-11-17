@@ -1,3 +1,4 @@
 https://www.blogson.com.br/como-gravar-dados-no-banco-de-dados-usando-ajax/
 https://pt.stackoverflow.com/questions/450749/exibir-dados-via-ajax-jquery-do-banco-de-dados
 https://learn.microsoft.com/pt-br/azure/mysql/single-server/connect-nodejs
+https://pt.stackoverflow.com/questions/29549/obter-conex%C3%A3o-com-banco-de-dados-em-html-e-js
